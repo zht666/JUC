@@ -6,6 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 乒乓球模式
  * 生产者、消费者
+ * 线程之间通信
  *
  */
 class ShareData

@@ -3,7 +3,12 @@ package com.zht.thread;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-
+/**
+ * 卖票机制
+ * 
+ *  没有线程之间的通信
+ *
+ */
 class Ticket//资源类  类  = 实例变量+实例方法
 {
 	private int number = 30;
