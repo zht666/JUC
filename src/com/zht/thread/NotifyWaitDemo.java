@@ -3,7 +3,11 @@ package com.zht.thread;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
+/**
+ * 乒乓球模式
+ * 生产者、消费者
+ *
+ */
 class ShareData
 {
 	private int number = 0;
@@ -15,6 +19,7 @@ class ShareData
 		lock.lock();
 		try 
 		{
+			//1 判断
 			while(number != 0)
 			{
 				condition.await();//this.wait();
@@ -36,6 +41,7 @@ class ShareData
 		lock.lock();
 		try 
 		{
+			//1 判断
 			while(number == 0)
 			{
 				condition.await();//this.wait();
