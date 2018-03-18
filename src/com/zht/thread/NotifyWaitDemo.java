@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 /**
- * 乒乓球模式
+ * 乒乓球模式    打篮球抢篮板
  * 生产者、消费者
  * 线程之间通信
  *
