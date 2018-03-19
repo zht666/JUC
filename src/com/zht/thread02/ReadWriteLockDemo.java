@@ -6,7 +6,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * 读写锁 ：案例：红蜘蛛共享屏幕
  * 读写分离
  * MySQL中：读锁可共享 写锁比排他
- *
+ * 
+ * 一个线程写入,100个线程读取
  */
 
 class MyQueue

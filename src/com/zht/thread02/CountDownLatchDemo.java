@@ -2,12 +2,16 @@ package com.zht.thread02;
 
 import java.util.concurrent.CountDownLatch;
 
-import com.atguigu.enums.CountryEnums;
+import com.zht.enums.CountryEnums;
 
 /**
  * Talk is cheap,show me your code
  * 
- * @Description: CountDownLatch  
+ * @Description: CountDownLatch 
+ *  线程的工具类 CountDownLatch
+ *  线程的控制和排序
+ *  做减法
+ *  工程中如何使用轮询？
  * 
  *让一些线程阻塞直到另一些线程完成一系列操作后才被唤醒。
  * 
@@ -42,6 +46,7 @@ public class CountDownLatchDemo
 		
 	}
 
+	//锁门案例
 	public static void testCloseDoor() throws InterruptedException
 	{
 		CountDownLatch cdl = new CountDownLatch(6);

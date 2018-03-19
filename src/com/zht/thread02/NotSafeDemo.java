@@ -10,7 +10,15 @@ import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
  * 
- * @Description: 集合类不安全
+ * 集合类不安全
+ * ConcurrentModificationException 并发修改异常
+ * 
+ * 方式一：
+ * CopyOnWriteArrayList 解决 ArrayList线程不安全问题
+ * 方式二：
+ * Collections.synchronizedList(list); Collections可以把线程不安全的ArrayList变成一个加同步锁的线程安全的list
+ * 
+ * 一边写，一边读 ，读写不分离导致
  * 
  */
 public class NotSafeDemo
