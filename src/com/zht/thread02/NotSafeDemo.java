@@ -59,6 +59,7 @@ CopyOnWrite容器即写时复制的容器。往一个容器添加元素的时候
 */
 	public static void ListNotSafe()
 	{
+		//读多写少 写时复制技术
 		CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<String>();//new ArrayList<String>();
 		
 //		list = Arrays.asList("a","b","c");
@@ -73,6 +74,21 @@ CopyOnWrite容器即写时复制的容器。往一个容器添加元素的时候
 		}
 	}
 
+	//源码433行
+//	 public boolean add(E e) {
+//       final ReentrantLock lock = this.lock;
+//       lock.lock();
+//       try {
+//           Object[] elements = getArray();
+//           int len = elements.length;
+//           Object[] newElements = Arrays.copyOf(elements, len + 1);
+//           newElements[len] = e;
+//           setArray(newElements);
+//           return true;
+//       } finally {
+//           lock.unlock();
+//       }
+//   }
 }
 
 
