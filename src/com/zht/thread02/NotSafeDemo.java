@@ -72,7 +72,7 @@ CopyOnWrite容器即写时复制的容器。往一个容器添加元素的时候
 				System.out.println(list);//[21as,23ad,lojf]
 			},String.valueOf(i)).start();
 		}
-	}
+	} 
 
 	//源码433行
 //	 public boolean add(E e) {
